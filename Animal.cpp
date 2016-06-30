@@ -49,5 +49,5 @@ bool comparaString(char c[], char c2[]){
 	   	    return 1;
 	   }else {
 	   return 0;
-	   }
+	   } 
 }  
