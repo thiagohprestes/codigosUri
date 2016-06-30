@@ -14,7 +14,7 @@ main(){
 		     if(comparaString("carnivoro", classe3)) printf("aguia");
 		     else if(comparaString("onivoro", classe3)) printf("pomba");
 		}
-		
+		 
 	   	 else if(comparaString("mamifero", classe2)){
 			 if(comparaString("onivoro", classe3)) printf("homem");
 		   	 else if(comparaString("herbivoro", classe3)) printf("vaca");
