@@ -27,10 +27,10 @@ int main(){
       }
 
          printf("media = %.2f\n", ((float)media)/2);
-      
-         printf("novo calculo (1-sim 2-nao)\n");
 
       while(1){
+        
+         printf("novo calculo (1-sim 2-nao)\n");
          scanf("%hd", &resp);
 
          if(resp == 1 || resp == 2) break;

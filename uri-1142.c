@@ -5,23 +5,21 @@
 #include<time.h>
 
 int main(){
-    unsigned int in, i = 1;
+    unsigned int in, i;
 
     #ifdef DEBUG
-        double tInicio_=clock() ;
+        double tInicio =clock() ;
     #endif
 
-    scanf("%hd", &in);
-
+    scanf("%d", &in);
+    
     in *= 4;
 
-    while(i <= in){
-         printf("%hd %hd %hd PUM\n", i, i + 1, i + 2);
-         i+=4;
-    } 
+    for( i = 1; i <= in; i++ ) printf( i & 3 ? "%d " : "PUM\n", i );
+    return 0;
 
     #ifdef DEBUG
-        printf( "Tempo: %.1lf\n", clock() - tInicio_) ;
+        printf( "Tempo: %.1lf\n", clock() - tInicio) ;
     #endif
         
 

@@ -11,7 +11,7 @@ int main(){
 
    if(num < num2){
 	    for(i = num; i <= num2; i++){
-	         if(i % 13 != 0) total += i;
+	         if(i % 13 != 0) total += i;/*verifica se i e multiplo de 13*/
 	         
 	    }
    }

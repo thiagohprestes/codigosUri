@@ -11,7 +11,7 @@ int main(){
 
        if(num < num2){
 	    for(i = num+1; i < num2; i++){
-	         if(i % 5 == 2 || i % 5 == 3) printf("%hd\n", i);
+	         if(i % 5 == 2 || i % 5 == 3) printf("%hd\n", i);/*verifica se resto da divisao de i por 5 eh 2 ou 3*/
 	         
 	    }
    }

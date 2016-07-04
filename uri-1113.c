@@ -4,15 +4,15 @@
 #include<math.h>
 
 int main(){
-	int num, num2;
+	int num, num2;/*variaveis de tipo inteiro*/
 
-	while(1){
-         scanf("%d %d", &num, &num2);
+	while(1){/*while rodando sem condicao de parada aqui*/
+         scanf("%d %d", &num, &num2);/*recebendo dois inteiros*/
 
-         if(num == num2) break;
+         if(num == num2) break;/*se os dois inteiros recebidos forem iguais, sai do laco*/
 
-         if(num > num2) printf("Decrescente\n");
-         else printf("Crescente\n");         
+         if(num > num2) printf("Decrescente\n");/*se num maior que num 2, imprime crescente*/
+         else printf("Crescente\n");/*se num2 > num, imprime decrescente*/         
 	}
 
 	return 0;
