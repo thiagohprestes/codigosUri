@@ -4,33 +4,23 @@
 #include <string.h>
 
 int main(){
-     unsigned long int *f;
-     int numCasos, i = 0, j = 0;
-     short int fibonacci;
+     unsigned long long f[60];
+     short numCasos, i = 0, fibonacci;
 
-     scanf("%d", &numCasos);
+     scanf("%hd", &numCasos);
 
-     while(i < numCasos){
+     f[0] = 0;
+     f[1] = 1;
+
+     while(numCasos--){
      	 scanf("%hd", &fibonacci);
-           
-         f = (unsigned long int *) malloc(fibonacci * (sizeof(unsigned long int)));
-          
-         if (f == NULL) return 1;
-         
-         f[0] = 0;
-         f[1] = 1;
-         j = 0;
 
-         while(j < fibonacci){
-             f[j+2] = f[j+1] + f[j];
-             j++;
-
+         while(i < fibonacci - 1){
+             f[i+2] = f[i+1] + f[i];
+             i++;
          }
          
-         printf("Fib(%d) = %lu\n", j, f[i]);
-
-     	 i++;
-     	 /*free(f);*/
+         printf("Fib(%hd) = %llu\n", fibonacci, f[fibonacci]);
      }
 
 	return 0;
