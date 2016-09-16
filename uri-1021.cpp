@@ -9,43 +9,43 @@ int main() {
 		
 	scanf("%lf", &valor);
 	
-	moedas = (valor - (int)valor)*100;
+	moedas = (valor - (int)valor)*100;//moedas vale a parte decimal de valor
 	
-	notas = valor; 
+	notas = valor;// notas recebe valor
 	
-	nCem = valor/100;
-	notas -= (nCem*100);
+	nCem = valor/100;//pegando parte de notas de 100
+	notas -= (nCem*100);//notas decrementa a parte das notas de 100
 	
-	nCin = notas/50;
-	notas -= (nCin*50);
+	nCin = notas/50;//pegando parte de notas de 50
+	notas -= (nCin*50);//notas decrementa a parte das notas de 50
 	
-	nVin = notas/20;
-	notas -= (nVin*20);
+	nVin = notas/20;//pegando parte de notas de 20
+	notas -= (nVin*20);//notas decrementa a parte das notas de 20
 	
-	nDez = notas/10;
-	notas -= (nDez*10); 
+	nDez = notas/10;//pegando parte de notas de 10
+	notas -= (nDez*10);//notas decrementa a parte das notas de 10
 	
-	nCinco = notas/5;
-	notas -= (nCinco*5);
+	nCinco = notas/5;//pegando parte de notas de 5
+	notas -= (nCinco*5);//notas decrementa a parte das notas de 5
 	
-	nDois = notas/2;
-	notas -= (nDois*2);
+	nDois = notas/2;//pegando parte de notas de 2
+	notas -= (nDois*2);//notas decrementa a parte das notas de 2
 	
 	mUm = notas;
 	
-	mCin = moedas/50;
-	moedas -= (mCin*50);
+	mCin = moedas/50;//pegando parte de moedas de 50
+	moedas -= (mCin*50);//moedas decrementa a parte das moedas de 50
 	
-	mVin = moedas/25;
-	moedas -= (mVin*25);
+	mVin = moedas/25;//pegando parte de moedas de 25
+	moedas -= (mVin*25);//moedas decrementa a parte das moedas de 25
 	
-	mDez = moedas/10;
-	moedas -= (mDez*10);
+	mDez = moedas/10;//pegando parte de moedas de 10
+	moedas -= (mDez*10);//moedas decrementa a parte das moedas de 10
 	
-	mCinco = moedas/5;
-	moedas -= (mCinco*5); 
+	mCinco = moedas/5;//pegando parte de moedas de 5
+	moedas -= (mCinco*5);//moedas decrementa a parte das moedas de 5
 	
-	mUmc = moedas;
+	mUmc = moedas;//moedas de um centavo eh o que sobra de moedas
 	
 	printf("NOTAS:\n%d nota(s) de R$ 100.00\n", nCem);
 	printf("%d nota(s) de R$ 50.00\n", nCin);

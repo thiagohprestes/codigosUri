@@ -4,7 +4,7 @@
 #include <string.h>
 
 int main(){
-     char frase[] = "LIFE IS NOT A PROB LEM TO BE SOVED";
+     char frase[] = "LIFE IS NOT A PROBLEM TO BE SOVED";
      short i, j;
 
      scanf("%hd" , &i);

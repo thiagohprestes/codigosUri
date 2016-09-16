@@ -5,6 +5,7 @@ int main() {
     
     scanf("%lf", &num);
     
+    //verifica a qual intervalo pertence e imprime referente ao intervalo
     if(num >= 0 && num <= 25) printf("Intervalo [0,25]\n");
     
     else if(num > 25 && num <= 50) printf("Intervalo (25,50]\n");

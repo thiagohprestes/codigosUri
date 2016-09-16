@@ -6,7 +6,7 @@ int main() {
 	
 	scanf("%i %i", &t, &vm);
 	
-	printf("%.3f\n", (vm * t) / kml);
+	printf("%.3f\n", (vm * t) / kml);//calculando qtde de combustivel gasto e imprimindo
 
     return 0;
 }

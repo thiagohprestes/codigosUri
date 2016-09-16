@@ -8,7 +8,7 @@ int main(){
       
      scanf("%lf %lf", &nota1, &nota2);
       
-     printf("%.5lf\n", ((nota1 * 3.5) + (nota2 * 7.5))/11 );
+     printf("%.5lf\n", ((nota1 * 3.5) + (nota2 * 7.5))/11);//calculando media ponderada das notas e imprimindo
    
-	 return 0;
+     return 0;
 }

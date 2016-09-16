@@ -1,12 +1,15 @@
 #include <iostream>
-
+#include <math.h>
+using namespace std;
+ 
 int main() {
-   int d;
-   float tComb;
+   int a, b, c, maior;
    
-   scanf("%i %f", &d, &tComb);
+   scanf("%i %i %i", &a, &b, &c);
 
-   printf("%.3f km/l\n",d/tComb);
+   maior = (a + b + abs(a - b))/2;//definindo qual o maior entre a e b
+   
+   printf("%i eh o maior\n",(maior + c + abs(maior - c))/2);//definindo maior entre c e maior anterior
    
     return 0;
 }

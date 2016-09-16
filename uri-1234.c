@@ -4,10 +4,12 @@
 #include <string.h>
 
 int main(){
-     char frase[53];
+     char frase[51];
      short i, j;
 
-       while(fgets(frase, 53, stdin)!= NULL){
+       while(fgets(frase, 51, stdin)!= NULL){
+    
+    	 //if(frase[0] == '\n') break;
 
          for(i = 0, j = 0; i < strlen(frase); i++, j++){
          	 if(frase[i] == '\n') {

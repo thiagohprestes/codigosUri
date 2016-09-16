@@ -4,13 +4,9 @@ int main() {
  
    double a, b, c, MEDIA;
    
-   scanf("%lf", &a);
-   
-   scanf("%lf", &b);
-   
-   scanf("%lf", &c);
+   scanf("%lf %lf %lf", &a, &b, &c);
 
-   MEDIA = ((a * 2) + (b * 3) + (c * 5))/10;
+   MEDIA = ((a * 2) + (b * 3) + (c * 5))/10;//calculando media ponderada
    
    printf("MEDIA = %.1lf\n", MEDIA);
 

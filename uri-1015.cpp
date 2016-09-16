@@ -1,5 +1,5 @@
 #include <iostream>
-#include<math.h>
+#include <math.h>
 
 int main() {
 	
@@ -9,7 +9,7 @@ int main() {
    scanf("%f %f",&x2, &y2);
    
   
-   printf("%.4f\n", sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1))) );
+   printf("%.4f\n", sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1))) );//calculando distancia entre dois pontos no plano e imprimindo
    
  
     return 0;
