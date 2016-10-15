@@ -20,7 +20,7 @@ int main(){
 		}
 
 		imprimeTTriang(tipoLados(&lados[i][0], 3), &lados[i][0]);
-		if(tipoLados(&lados[i][0], 3) != 0) printf("	Area: %.3Lf\n", areaTriangulo(lados[i][0], lados[i][1], lados[i][2]));
+		if(tipoLados(&lados[i][0], 3) != 0) printf("    Area: %.3Lf\n", areaTriangulo(lados[i][0], lados[i][1], lados[i][2]));
 	}
 
 	return 0;
@@ -44,7 +44,8 @@ void ordenaVetor(double *lados, int tam){
 void imprimeTTriang(int tipoTri, double *lado){
 
 	switch(tipoTri){
-		case 0: printf("%.3lf %.3lf %.3lf nao formam triangulo\n", lado[0], lado[1], lado[2]); break;
+		case 0: printf("%.3lf %.3lf %.3lf nao formam triangulo\n",
+                        lado[0], lado[1], lado[2]); break;
 		case 1: printf("Tipo: equilatero"); break;
 		case 2: printf("Tipo: isosceles"); break;
 		case 3: printf("Tipo: escaleno"); break;
