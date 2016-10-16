@@ -8,27 +8,21 @@ int main(){
 	 short int linha, coluna;
 	 char operacao;/*Recebendo char representando tipo da operacao*/
 	 double matriz[TMATRIZ][TMATRIZ];
-     long double soma = 0.0;
+     long double soma = 0.;
 
 	 scanf("%c", &operacao);
 
-	 for(linha = 0; linha < TMATRIZ; linha++){/*Percorrendo linhas da matriz*/
+	 for(linha = 0; linha < TMATRIZ; linha++)/*Percorrendo linhas da matriz*/
 	 	 for(coluna = 0; coluna < TMATRIZ; coluna++){/*Percorrendo colunas da matriz*/
-             scanf("%lf", &matriz[linha][coluna]);/*preenchendo matriz*/
+                       scanf("%lf", &matriz[linha][coluna]);/*preenchendo matriz*/
+		       if(linha+coluna >= 12 && coluna > linha)
+                              soma += matriz[linha][coluna];/*incrementando valor a soma*/
 
-         }    
-	 }
-
-     for(linha = 1; linha < (TMATRIZ - 1); linha++){/*Percorrendo linhas da matriz a partir da segunda até penultima linha*/
-     	 for(coluna = 7; coluna < TMATRIZ; coluna++){/*Percorrendo colunas da matriz a partir da oitava coluna*/
-             if(linha+coluna >= 12 && coluna > linha)
-                 soma += matriz[linha][coluna];/*incrementando valor a soma*/
-         } 
-      } 
-     
+                  }    
+	
      if(operacao == 'S') printf("%.1Lf\n", soma);/*Se operacao for soma, exibe soma*/
 
-     else if(operacao == 'M') printf("%.1Lf\n", soma/30);/*Se operacao for media, exibe media*/
+     else printf("%.1Lf\n", soma/30);/*Se operacao for media, exibe media*/
 
 	 return 0;
 }
