@@ -12,17 +12,18 @@ int main(){
 
 	 scanf("%c", &operacao);
 
-	 for(linha = 0; linha < TMATRIZ; linha++){/*Percorrendo linhas da matriz*/
+	 for(linha = 0; linha < TMATRIZ; linha++)/*Percorrendo linhas da matriz*/
 	 	 for(coluna = 0; coluna < TMATRIZ; coluna++){/*Percorrendo colunas da matriz*/
-             scanf("%lf", &matriz[linha][coluna]);/*preenchendo matriz*/
-             if(linha < 5 && coluna > linha && coluna + linha < 11)
-                 soma += matriz[linha][coluna];
-         }    
-	 }  
+		     scanf("%lf", &matriz[linha][coluna]);/*preenchendo matriz*/
+		     
+		     if(linha < 5 && coluna > linha && coluna + linha < 11)
+			 soma += matriz[linha][coluna];
+                 }    
+	  
      
-     if(operacao == 'S') printf("%.1Lf\n", soma);/*Se operacao for soma, exibe soma*/
+         if(operacao == 'S') printf("%.1Lf\n", soma);/*Se operacao for soma, exibe soma*/
 
-     else if(operacao == 'M') printf("%.1Lf\n", soma/30);/*Se operacao for media, exibe media*/
+	 else printf("%.1Lf\n", soma/30);/*Se operacao for media, exibe media*/
 
 	 return 0;
 }
