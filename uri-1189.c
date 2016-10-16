@@ -8,21 +8,22 @@ int main(){
 	 short linha, coluna;
 	 char operacao;/*Recebendo char representando tipo da operacao*/
 	 double matriz[TMATRIZ][TMATRIZ];
-     long double soma = 0;
+         long double soma = 0;
 
 	 scanf("%c", &operacao);
 
-	 for(linha = 0; linha < TMATRIZ; linha++){/*Percorrendo linhas da matriz*/
+	 for(linha = 0; linha < TMATRIZ; linha++)/*Percorrendo linhas da matriz*/
 	 	 for(coluna = 0; coluna < TMATRIZ; coluna++){/*Percorrendo colunas da matriz*/
-             scanf("%lf", &matriz[linha][coluna]);/*preenchendo matriz*/
-             if(coluna < 5 && linha > coluna && linha + coluna < 11)   
-                 soma += matriz[linha][coluna];/*incrementando valor a soma*/
-         }    
-	 }
+                     scanf("%lf", &matriz[linha][coluna]);/*preenchendo matriz*/
+                     
+	             if(coluna < 5 && linha > coluna && linha + coluna < 11)   
+                           soma += matriz[linha][coluna];/*incrementando valor a soma*/
+		 }    
+	 
 
-     if(operacao == 'S') printf("%.1Lf\n", soma);/*Se operacao for soma, exibe soma*/
+          if(operacao == 'S') printf("%.1Lf\n", soma);/*Se operacao for soma, exibe soma*/
 
-     else if(operacao == 'M') printf("%.1Lf\n", soma/30);/*Se operacao for media, exibe media*/
+          else printf("%.1Lf\n", soma/30);/*Se operacao for media, exibe media*/
 
-	 return 0;
+	  return 0;
 }
