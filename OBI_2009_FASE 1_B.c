@@ -17,7 +17,6 @@ int main(){
      		maior = colonia;
             resp = i;
      	 }
-     	  //printf("%Lf\n", maior);
      }
 
      printf("%d\n", resp);
