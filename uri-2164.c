@@ -1,0 +1,1 @@
+#include <stdio.h>#include <stdlib.h>#include <math.h>#include <string.h>int main() {     short n;     double fib;          scanf("%hd", &n);          fib = (pow(((1 + sqrt(5))/2), n) - pow(((1 - sqrt(5))/2), n))/sqrt(5);          printf("%.1lf\n", fib);     return 0;}
