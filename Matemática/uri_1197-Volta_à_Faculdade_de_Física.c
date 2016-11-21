@@ -4,10 +4,10 @@
 #include <string.h>
 
 int main(){
-	 int senha;
-	 
-	 while(scanf("%d", &senha) != EOF)			 
-		 printf("%d\n", senha-1);
-	  
+     short v, t;
+      
+     while(scanf("%hd %hd" , &v, &t) != EOF){ 
+     	printf("%d\n", v*2*t);
+     }
 	 return 0;
 }
