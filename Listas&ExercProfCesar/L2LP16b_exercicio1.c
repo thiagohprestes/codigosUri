@@ -3,7 +3,7 @@
 #include <math.h>
 #include <string.h>
 
-#define TAM_VETOR 5
+#define TAM_VETOR 20
 
 struct Aluno{
 	char ra[14];
