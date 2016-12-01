@@ -30,7 +30,7 @@ int main(){
 	
 	vArqAluno = fopen("Alunos.dat", "r");
 	if(vArqAluno == NULL){	
-		printf("ERRO AO ABRIR ARQUIVO Telefones.dat\n\n");
+		printf("ERRO AO ABRIR ARQUIVO Alunos.dat\n\n");
 		return 1;
 	}
 	
