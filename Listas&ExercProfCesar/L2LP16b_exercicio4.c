@@ -59,12 +59,12 @@ int main(){
 				if(atendimento.tipo == 'P') relatAtend[i].totPart += atendimento.valor;
 				else relatAtend[i].totConv += atendimento.valor;
 				
-                fread(&atendimento, sizeof(RegArqAtends), 1, vArqAtends);	
+                		fread(&atendimento, sizeof(RegArqAtends), 1, vArqAtends);	
 			 }
-			    relatAtend[i].total =  relatAtend[i].totPart + relatAtend[i].totConv;
-				i++;			
+			 relatAtend[i].total =  relatAtend[i].totPart + relatAtend[i].totConv;
+			 i++;			
 		}		  
-    }
+        }
 	
 	printf("\nData          Particular    Convênio     Total\n");
 	for(j = 0; j < i; j++){
