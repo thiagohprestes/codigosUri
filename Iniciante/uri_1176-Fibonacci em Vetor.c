@@ -23,5 +23,5 @@ int main(){
          printf("Fib(%hd) = %llu\n", fibonacci, f[fibonacci]);
      }
 
-	return 0;
+     return 0;
 }

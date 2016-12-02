@@ -4,7 +4,7 @@
 #include <string.h>
 
 int main(){
-	short int num, i = 1;
+    short num, i = 1;
     int vetor[10];
 
     scanf("%hd", &num);
@@ -21,5 +21,5 @@ int main(){
          i++;
     }
 
-	return 0;
+    return 0;
 }

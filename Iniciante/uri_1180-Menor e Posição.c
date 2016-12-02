@@ -26,5 +26,5 @@ int main(){
 
      printf("Menor valor: %d\nPosicao: %d\n", menor, posicao);
 
-	 return 0;
+     return 0;
 }

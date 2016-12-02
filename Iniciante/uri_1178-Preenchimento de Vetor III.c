@@ -5,7 +5,7 @@
 
 int main(){
      double x, n[100];
-     short int i = 1;
+     short i = 1;
 
      scanf("%lf", &x);
      
@@ -17,9 +17,9 @@ int main(){
          n[i] = n[i-1]/2;
          
          printf("N[%hd] = %.4lf\n", i, n[i]);
-         i++;  
 
+         i++;  
      }
 
-	 return 0;
+     return 0;
 }

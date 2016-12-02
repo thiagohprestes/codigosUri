@@ -14,6 +14,7 @@ int main(){
 	
 	return 0;
 }
+
 int fatorial(int num){
       int i, total = 1;
 

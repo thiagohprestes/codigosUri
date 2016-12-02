@@ -4,18 +4,16 @@
 #include <string.h>
 
 int main(){
-	 int i = 0, soma = 0, num;
+	 int i = 0, soma = 0, num = 0;
 	 
-	 while(1){
+     while(num >= 0){
          scanf("%d", &num);
-
-         if(num < 0) break;
 
          soma += num; 
          i++;
-	 }
+    }
      
-     printf("%.2f\n", (float)soma/i);
+    printf("%.2f\n", (float)soma/i);
 
-	 return 0;
+    return 0;
 }
