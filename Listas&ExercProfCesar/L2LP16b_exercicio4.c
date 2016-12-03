@@ -37,10 +37,10 @@ int main(){
 	long double tFinalTotal = 0; 
  	
 	printf("Informe a data inicial do período: ");
-	scanf("%d/%d/%d", &dataI.dia, &dataI.mes, &dataI.ano);
+	scanf("%d %*c %d %*c %d", &dataI.dia, &dataI.mes, &dataI.ano);
 	
 	printf("Informe a data final do período: ");
-	scanf("%d/%d/%d", &dataF.dia, &dataF.mes, &dataF.ano);
+	scanf("%d %*c %d %*c %d", &dataF.dia, &dataF.mes, &dataF.ano);
 	 
 	vArqAtends = fopen("Atendimentos.dat", "r");
 	if(vArqAtends == NULL){	
