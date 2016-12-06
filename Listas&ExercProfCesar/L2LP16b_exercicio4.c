@@ -49,9 +49,7 @@ int main(){
 	}
 	
 	i = 0;
-	while(!feof(vArqAtends)){
-		fread(&atendimento, sizeof(RegArqAtends), 1, vArqAtends);
-		
+	while(fread(&atendimento, sizeof(RegArqAtends), 1, vArqAtends)){
 		while(dateIsLarger(atendimento.data, dataI) && dateIsLarger(dataF, atendimento.data) && !feof(vArqAtends)){
 			 relatAtend[i].data = atendimento.data;	
 			 
