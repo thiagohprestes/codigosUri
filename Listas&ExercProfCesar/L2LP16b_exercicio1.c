@@ -3,11 +3,11 @@
 #include <math.h>
 #include <string.h>
 
-#define TAM_VETOR 5
+#define TAM_VETOR 20
 
 typedef struct{
 	char ra[14];
-	char nome[41];
+	char nome[21];
 	float notaFinal;
 	int faltas;
 } RegArqAluno;
