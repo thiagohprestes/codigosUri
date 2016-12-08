@@ -36,10 +36,10 @@ int main(){
 	double tFinalPart = 0,  tFinalConv = 0;
 	long double tFinalTotal = 0; 
  	
-	printf("Informe a data inicial do período: ");
+	printf("Informe a data inicial do periodo: ");
 	scanf("%d %*c %d %*c %d", &dataI.dia, &dataI.mes, &dataI.ano);
 	
-	printf("Informe a data final do período: ");
+	printf("Informe a data final do periodo: ");
 	scanf("%d %*c %d %*c %d", &dataF.dia, &dataF.mes, &dataF.ano);
 	 
 	vArqAtends = fopen("Atendimentos.dat", "r");
@@ -64,7 +64,7 @@ int main(){
 		}		  
         }
 	
-	printf("\nData          Particular    Convênio     Total\n");
+	printf("\nData          Particular    Convenio     Total\n");
 	for(j = 0; j < i; j++){
 		printf("%02d/%02d/%04d    %8.2f    %8.2f    %8.2f\n", relatAtend[j].data, relatAtend[j].totPart,
                                		  relatAtend[j].totConv, relatAtend[j].total);	
