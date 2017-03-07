@@ -6,25 +6,25 @@
 int mdc(int, int);
 
 int main(){
-     int numCasos, f1, f2;
+  int numCasos, f1, f2;
 
-     scanf("%d" , &numCasos);
+  scanf("%d" , &numCasos);
 
-     while(numCasos--){
-     	scanf("%d %d" , &f1, &f2);
+  while(numCasos--){
+    scanf("%d %d" , &f1, &f2);
 
-     	printf("%d\n", mdc(f1, f2));
-     }
-
-	 return 0;
+    printf("%d\n", mdc(f1, f2));
+  }
+	
+  return 0;
 }
 
-int mdc(int m, int n)
-{	if (m < 0) m = -m;
-	if (n < 0) n = -n;
+int mdc(int m, int n){	
+  if (m < 0) m = -m;
+  if (n < 0) n = -n;
 
-	if (m % n == 0)
-		return n;
-	else
-		return mdc(n, m % n);
+  if (m % n == 0)
+    return n;
+  else
+    return mdc(n, m % n);
 }
