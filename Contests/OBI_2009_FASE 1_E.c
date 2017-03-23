@@ -4,7 +4,7 @@
 #include <string.h>
 
 int main(){
-	 int matriz[510][510] = {0}, n, x, y, i;
+     int matriz[510][510] = {0}, n, x, y, i;
      short resp = 0;
 
      scanf("%d", &n);
