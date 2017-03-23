@@ -11,18 +11,15 @@ int main(){
 
      scanf("%c", &operacao);
 
-     for(linha = 0; linha < TMATRIZ; linha++){/*Percorrendo linhas da matriz*/
+     for(linha = 0; linha < TMATRIZ; linha++)/*Percorrendo linhas da matriz*/
          for(coluna = 0; coluna < TMATRIZ; coluna++){/*Percorrendo colunas da matriz*/
              scanf("%lf", &matriz[linha][coluna]);/*preenchendo matriz*/
              if(coluna + linha > 11)/*condicional para receber valores da diagonal inferior direita*/
                  soma += matriz[linha][coluna];/*incrementando valor a soma*/
 
-         }    
-     }  
+         }     
      
-     if(operacao == 'S') printf("%.1Lf\n", soma);/*Se operacao for soma, exibe soma*/
-
-     else if(operacao == 'M') printf("%.1Lf\n", soma/66);/*Se operacao for media, exibe media*/
+     (operacao == 'S') ? printf("%.1Lf\n", soma) : (operacao == 'M') printf("%.1Lf\n", soma/66);
 
      return 0;
 }
