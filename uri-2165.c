@@ -3,15 +3,13 @@
 #include <math.h>
 #include <string.h>
 
-int main(){
-     char tweet[500];
+int main()
+{
+  char tweet[500];
 
-     scanf("%[^\n\r]", tweet);
+  scanf("%[^\n\r]", tweet);
 
-     if(strlen(tweet) <= 140)
-     	printf("TWEET\n");
-     else
-     	printf("MUTE\n");
-
-	 return 0;
+  (strlen(tweet) <= 140) ? puts("TWEET") : puts("MUTE");
+	
+  return 0;
 }
