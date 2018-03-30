@@ -14,7 +14,7 @@ int compara( const void *, const void *);
 
 int main(){
 	int n, i;
-	//int c;
+	int c;
 	
 	scanf("%d\n", &n);	
 	
@@ -24,7 +24,11 @@ int main(){
 		
 		for(i = 0; i < n; i++){
 			scanf("%[^\r\n]", aluno[i].nome);
-	
+			//fgets(aluno[i].nome,200,stdin); Poderia usar o fgets tambem
+				
+			//for(c=0; aluno[i].nome[c] >= ' '; c++); Usando fgets seria necessario retirar o enter que veio junto
+			//aluno[i].nome[c]= '\0';
+			
 			scanf("%s %c", &aluno[i].cor, &aluno[i].tam);
 			while(getchar()!='\n');
 			
